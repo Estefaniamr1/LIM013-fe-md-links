@@ -33,8 +33,8 @@ Options:
   -s,--stats             muestra estadisticas de los links
   -h, --help             display help for command
 
-
 ## 5. INSTALACION
-
+$ npm install --global EstefaniaM/md-links
 
 ## 6. DESARROLLADOR
+**Estefania Moncada** -[Estefaniamr1]
