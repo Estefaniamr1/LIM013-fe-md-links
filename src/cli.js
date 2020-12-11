@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const { mdLinks } = require('./md-links.js');
-const {totalLinks, statsUnique} = require('./stats.js');
+const {stats, statsValidate} = require('./stats.js');
 
 /* const yargs = require('yargs');
 
@@ -54,8 +54,9 @@ program.version('0.0.1');
 program
   .command('md-links <ruta>')
   .description('llama a los links md')
-  .option('-v, --validate [type]', 'muestra validez')
+  .option('-v, --validate', 'muestra validez')
   .option('-s,--stats', 'muestra estadisticas de los links')
+  /* .option('-h,--help', 'Opciones') */
   .action((path, options) => {
     console.log(path, options.validate, options.stats);
     mdLinks(path, options)
@@ -69,8 +70,11 @@ program
             }
         })
         if(!options.validate && options.stats) {
-          console.log('total: ', totalLinks(links));
+          console.log(stats(links));
         }
+        if(options.stats && options.validate) {
+          console.log(statsValidate(links));
+        } 
 
       })
       .catch(e =>console.error(e));

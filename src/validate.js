@@ -3,6 +3,7 @@ const { getLinksMd } = require('./archivo.js');
 
 const linksValids = (ruta) => {
   const arrayOfLinks = getLinksMd(ruta);
+  /* fetch me devuelve una promesa, hace fetch de href*/
    const arrayLinksPromesas = arrayOfLinks.map((file) => fetch(file.href)
    /* spread: destructura y me devuelve todos los elementos */ 
    .then((res) => ({
