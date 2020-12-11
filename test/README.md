@@ -34,6 +34,7 @@ Options:
 
 
 ## 5. INSTALACION
-
+$ npm install --global EstefaniaM/md-links
 
 ## 6. DESARROLLADOR
+**Estefania Moncada** -[Estefaniamr1]
