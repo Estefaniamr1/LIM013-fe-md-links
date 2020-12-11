@@ -1,0 +1,1 @@
+(otro)[https://github.com/Estefaniamr1/LIM013-fe-social-network/blob/master/prototipos/vista1.jpeg]

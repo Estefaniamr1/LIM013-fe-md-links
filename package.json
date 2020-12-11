@@ -2,12 +2,13 @@
   "name": "tefa-mdlinks",
   "version": "1.0.0",
   "description": "Librería que lee y analiza archivos en formato Markdown.",
-  "main": "index.js",
+  "main": "src/archivo.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "start": "node src/archivo.js"
   },
   "repository": {
     "type": "git",
@@ -30,5 +31,11 @@
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.1",
     "jest": "^26.6.3"
+  },
+  "dependencies": {
+    "commander": "^6.2.0",
+    "marked": "^1.2.5",
+    "node-fetch": "^2.6.1",
+    "yargs": "^16.2.0"
   }
 }
